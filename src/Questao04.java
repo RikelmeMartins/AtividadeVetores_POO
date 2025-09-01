@@ -10,15 +10,14 @@ public class Questao04 {
 
         System.out.print("Informe um numero: ");
         int nFor = leitor.nextInt();
-
+        numeros[0] = nFor;
         int maior = nFor;
         int menor = nFor;
 
-        for (int i = 0; i < numeros.length-1; i++){
-            numeros[i] = nFor;
+        for (int i = 1; i < numeros.length; i++){
             System.out.print("Informe um numero: ");
             nFor = leitor.nextInt();
-
+            numeros[i] = nFor;
             if (numeros[i] > maior){
                 maior = numeros[i];
             }
